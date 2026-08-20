@@ -1,0 +1,13 @@
+Qty,Component,Recommended Part,Notes
+1,ESP32 development board,ESP32-DevKitC or equivalent,Use a board exposing 5V/VIN and GND
+2,Shift register,74HCT595D,5V operation with TTL-compatible inputs
+1,Driver array,ULN2803C,8-channel low-side sink
+8,P-channel MOSFET,AO3401A,High-side row driver
+1,8x8 LED matrix,Common-anode 8x8 matrix,Verify exact pinout
+8,LED resistor,220 ohm,One per column current path
+8,Gate pull-up,10k ohm,One per PMOS gate
+2,Decoupling capacitor,100nF ceramic,One per 74HCT595
+1,Bulk capacitor,10uF,Near 5V entry
+1,Bulk capacitor,100uF,Near LED supply
+1,ESP32 header,1x6 or 1x8,Match chosen board
+1,Power connector,2-pin terminal,5V and GND
